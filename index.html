@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hyma Lasya S — Aspiring Software Developer</title>
+    <meta
+      name="description"
+      content="Personal portfolio website for Hyma Lasya S, 1st-year B.Tech CSE student at Joy University (NIAT/NxtWave) and aspiring software developer."
+    />
+    <meta property="og:title" content="Hyma Lasya S — Aspiring Software Developer" />
+    <meta
+      property="og:description"
+      content="Personal portfolio website for Hyma Lasya S, 1st-year B.Tech CSE student at Joy University (NIAT/NxtWave) and aspiring software developer."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts: Outfit for headings & Plus Jakarta Sans for readable body prose -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External CSS3 Stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Skip Link for Keyboard Accessibility -->
+    <a class="skip-link" href="#home">Skip to main content</a>
+
+    <!-- =====================================================
+         HEADER & NAVIGATION BAR (Pure HTML5 + CSS3)
+         ===================================================== -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <!-- Zone 1: Brand Wordmark -->
+        <a href="#home" class="brand-logo">Hyma Lasya S</a>
+
+        <!-- Zone 2: Desktop Navigation Links -->
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#goals" class="nav-link">Goals</a>
+        </nav>
+
+        <!-- Zone 3: Primary Header Action + Mobile Native Menu -->
+        <div class="header-actions">
+          <a href="#contact" class="btn btn-primary btn-sm header-cta">Contact Me</a>
+
+          <!-- Pure HTML5 <details> mobile navigation (requires zero JavaScript) -->
+          <details class="mobile-menu">
+            <summary class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <line x1="3" y1="12" x2="21" y2="12" />
+                <line x1="3" y1="18" x2="21" y2="18" />
+              </svg>
+            </summary>
+            <nav class="mobile-dropdown" aria-label="Mobile navigation">
+              <a href="#about" class="mobile-nav-link">About</a>
+              <a href="#skills" class="mobile-nav-link">Skills</a>
+              <a href="#projects" class="mobile-nav-link">Projects</a>
+              <a href="#education" class="mobile-nav-link">Education</a>
+              <a href="#goals" class="mobile-nav-link">Goals</a>
+              <a href="#contact" class="mobile-nav-link mobile-nav-cta">Contact Me</a>
+            </nav>
+          </details>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- =====================================================
+           1. HERO / HOME SECTION
+           ===================================================== -->
+      <section id="home" class="hero-section">
+        <div class="container hero-grid">
+          <!-- Left Column: Introduction & Actions -->
+          <div class="hero-content">
+            <p class="hero-kicker">HYMA LASYA S</p>
+            <h1 class="hero-title">Aspiring Software Developer</h1>
+            <p class="hero-subtitle">
+              B.Tech CSE Student &nbsp;|&nbsp; Python Beginner &nbsp;|&nbsp; Web Development Enthusiast
+            </p>
+            <p class="hero-description">
+              I am a first-year Computer Science and Engineering student at Joy University in
+              collaboration with NIAT/NxtWave. Passionate about programming and clean design, I am
+              building strong coding foundations and crafting responsive web experiences.
+            </p>
+
+            <!-- Primary & Secondary Call-to-Action Buttons -->
+            <div class="hero-cta-group">
+              <!-- Replace href="#cv-modal" with href="./assets/Hyma_Lasya_S_CV.pdf" download once your PDF CV is ready -->
+              <a href="#cv-modal" class="btn btn-primary">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                <span>Download CV</span>
+              </a>
+
+              <a href="#contact" class="btn btn-secondary">
+                <span>Contact Me</span>
+              </a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="hero-socials">
+              <a
+                href="https://github.com/hymalasyasomusekhar"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                aria-label="Visit Hyma Lasya S on GitHub"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                  />
+                </svg>
+                <span>GitHub</span>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/hyma-s-98a318450"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                aria-label="Visit Hyma Lasya S on LinkedIn"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
+                  />
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Professional Profile Photo Placeholder -->
+          <div class="hero-media">
+            <div class="profile-frame glass-card">
+              <!--
+                HOW TO ADD YOUR REAL PROFILE PHOTO:
+                1. Save your photo (e.g., profile.jpg) inside an "images" folder.
+                2. Uncomment the <img> tag below and remove the .profile-placeholder div.
+                <img src="./images/profile.jpg" alt="Portrait of Hyma Lasya S" class="profile-photo" />
+              -->
+              <div class="profile-placeholder" role="img" aria-label="Profile photo placeholder for Hyma Lasya S">
+                <div class="profile-avatar-ring">
+                  <svg
+                    class="profile-avatar-svg"
+                    viewBox="0 0 160 160"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <circle cx="80" cy="80" r="78" fill="url(#avatarBg)" stroke="url(#avatarStroke)" stroke-width="2" />
+                    <circle cx="80" cy="60" r="24" fill="#93C5FD" fill-opacity="0.22" stroke="#60A5FA" stroke-width="2" />
+                    <path
+                      d="M36 132C42.5 108 59.5 96 80 96C100.5 96 117.5 108 124 132"
+                      fill="#93C5FD"
+                      fill-opacity="0.16"
+                      stroke="#60A5FA"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <defs>
+                      <linearGradient id="avatarBg" x1="16" y1="16" x2="144" y2="144" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#0F1F42" />
+                        <stop offset="1" stop-color="#081126" />
+                      </linearGradient>
+                      <linearGradient id="avatarStroke" x1="0" y1="0" x2="160" y2="160" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#38BDF8" stop-opacity="0.65" />
+                        <stop offset="1" stop-color="#2563EB" stop-opacity="0.2" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <p class="placeholder-name">Hyma Lasya S</p>
+                <p class="placeholder-caption">Profile Photo Placeholder</p>
+              </div>
+
+              <div class="profile-meta-strip">
+                <div class="meta-item">
+                  <span class="meta-label">Program</span>
+                  <span class="meta-value">B.Tech CSE · 1st Year</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Institution</span>
+                  <span class="meta-value">Joy University · NIAT/NxtWave</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+           2. ABOUT ME SECTION
+           ===================================================== -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-kicker">Introduction</p>
+            <h2 class="section-title">About Me</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="glass-card about-card about-narrative">
+              <p class="about-lead">
+                I am a first-year B.Tech Computer Science and Engineering student at
+                <strong>Joy University</strong> in academic collaboration with
+                <strong>NIAT/NxtWave</strong>, dedicated to building a strong foundation in
+                software development.
+              </p>
+              <p>
+                Passionate about programming and technology, I am currently learning Python, HTML5,
+                CSS3, and core web development principles. I enjoy exploring how software solves
+                everyday problems and developing creative, useful projects as I grow my technical
+                fluency.
+              </p>
+              <p>
+                I take pride in continuous learning—practicing structured problem solving, writing
+                clean code, and steadily working toward my long-term goal of becoming a skilled,
+                professional software developer.
+              </p>
+            </div>
+
+            <aside class="glass-card about-card about-highlights" aria-label="Quick profile overview">
+              <h3 class="card-subtitle">Academic &amp; Learning Focus</h3>
+              <dl class="detail-list">
+                <div class="detail-row">
+                  <dt>Current Focus</dt>
+                  <dd>Python, HTML5, CSS3 &amp; Web Basics</dd>
+                </div>
+                <div class="detail-row">
+                  <dt>University</dt>
+                  <dd>Joy University</dd>
+                </div>
+                <div class="detail-row">
+                  <dt>Collaboration</dt>
+                  <dd>NIAT / NxtWave</dd>
+                </div>
+                <div class="detail-row">
+                  <dt>Academic Year</dt>
+                  <dd>1st Year B.Tech CSE</dd>
+                </div>
+                <div class="detail-row">
+                  <dt>Career Objective</dt>
+                  <dd>Software Developer</dd>
+                </div>
+              </dl>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+           3. SKILLS SECTION
+           ===================================================== -->
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-kicker">Core Competencies</p>
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-subtitle">
+              Foundational technologies and problem-solving disciplines I am actively learning and
+              practicing.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <!-- Skill 1: Python -->
+            <article class="glass-card skill-card">
+              <div class="skill-head">
+                <div class="icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6" />
+                    <polyline points="8 6 2 12 8 18" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="skill-title">Python</h3>
+                  <p class="skill-level">Beginner</p>
+                </div>
+              </div>
+              <p class="skill-description">
+                Learning foundational syntax, variables, loops, conditionals, functions, and writing
+                introductory logic programs.
+              </p>
+            </article>
+
+            <!-- Skill 2: HTML5 -->
+            <article class="glass-card skill-card">
+              <div class="skill-head">
+                <div class="icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                    <polyline points="14 2 14 8 20 8" />
+                    <line x1="16" y1="13" x2="8" y2="13" />
+                    <line x1="16" y1="17" x2="8" y2="17" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="skill-title">HTML5</h3>
+                  <p class="skill-level">Foundational</p>
+                </div>
+              </div>
+              <p class="skill-description">
+                Structuring clean, accessible, and semantic web pages using modern HTML5 landmarks,
+                lists, links, and media elements.
+              </p>
+            </article>
+
+            <!-- Skill 3: CSS3 -->
+            <article class="glass-card skill-card">
+              <div class="skill-head">
+                <div class="icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                    <line x1="3" y1="9" x2="21" y2="9" />
+                    <line x1="9" y1="21" x2="9" y2="9" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="skill-title">CSS3</h3>
+                  <p class="skill-level">Foundational</p>
+                </div>
+              </div>
+              <p class="skill-description">
+                Designing responsive interfaces with Flexbox, CSS Grid, custom properties, hover
+                transitions, and media queries.
+              </p>
+            </article>
+
+            <!-- Skill 4: Basic Web Development -->
+            <article class="glass-card skill-card">
+              <div class="skill-head">
+                <div class="icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="2" y1="12" x2="22" y2="12" />
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="skill-title">Basic Web Development</h3>
+                  <p class="skill-level">Beginner</p>
+                </div>
+              </div>
+              <p class="skill-description">
+                Connecting layout, typography, and multi-device responsiveness to build static
+                websites that work cleanly across screens.
+              </p>
+            </article>
+
+            <!-- Skill 5: Computer Science Fundamentals -->
+            <article class="glass-card skill-card">
+              <div class="skill-head">
+                <div class="icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="4" y="4" width="16" height="16" rx="2" />
+                    <rect x="9" y="9" width="6" height="6" />
+                    <line x1="9" y1="1" x2="9" y2="4" />
+                    <line x1="15" y1="1" x2="15" y2="4" />
+                    <line x1="9" y1="20" x2="9" y2="23" />
+                    <line x1="15" y1="20" x2="15" y2="23" />
+                    <line x1="20" y1="9" x2="23" y2="9" />
+                    <line x1="20" y1="14" x2="23" y2="14" />
+                    <line x1="1" y1="9" x2="4" y2="9" />
+                    <line x1="1" y1="14" x2="4" y2="14" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="skill-title">Computer Science Fundamentals</h3>
+                  <p class="skill-level">1st Year Coursework</p>
+                </div>
+              </div>
+              <p class="skill-description">
+                Building core understanding of programming logic, computing concepts, and structured
+                problem decomposition in B.Tech CSE.
+              </p>
+            </article>
+
+            <!-- Skill 6: Problem Solving -->
+            <article class="glass-card skill-card">
+              <div class="skill-head">
+                <div class="icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                    <line x1="12" y1="17" x2="12.01" y2="17" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="skill-title">Problem Solving</h3>
+                  <p class="skill-level">Developing</p>
+                </div>
+              </div>
+              <p class="skill-description">
+                Practicing step-by-step analytical thinking to break down coding exercises and debug
+                solutions systematically.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+           4. PROJECTS SECTION
+           ===================================================== -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-kicker">Practice &amp; Builds</p>
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">
+              Foundational projects demonstrating my current learning progress in HTML5, CSS3, and
+              Python.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project 1: Personal Portfolio Website -->
+            <article class="glass-card project-card">
+              <div class="project-preview">
+                <!--
+                  HOW TO ADD A PROJECT SCREENSHOT:
+                  Replace the .project-placeholder div with:
+                  <img src="./images/project-portfolio.jpg" alt="Personal Portfolio Website preview" class="project-img" />
+                -->
+                <div class="project-placeholder preview-portfolio" aria-label="Personal Portfolio Website image placeholder">
+                  <div class="preview-mockup">
+                    <div class="mockup-bar">
+                      <span></span><span></span><span></span>
+                    </div>
+                    <div class="mockup-hero">
+                      <div class="mockup-line wide"></div>
+                      <div class="mockup-line medium"></div>
+                      <div class="mockup-blocks">
+                        <div></div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="preview-label">Project Preview Placeholder</span>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <p class="project-tech">HTML5 &nbsp;&middot;&nbsp; CSS3</p>
+                <h3 class="project-title">Personal Portfolio Website</h3>
+                <p class="project-description">
+                  A personal website designed and coded from scratch to showcase my academic
+                  profile, foundational skills, education, and learning projects.
+                </p>
+                <div class="project-actions">
+                  <!-- Replace href with your specific repository URL when published -->
+                  <a
+                    href="https://github.com/hymalasyasomusekhar"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-secondary btn-sm"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                      />
+                    </svg>
+                    <span>View on GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: Python Programming Projects -->
+            <article class="glass-card project-card">
+              <div class="project-preview">
+                <!--
+                  HOW TO ADD A PROJECT SCREENSHOT:
+                  Replace the .project-placeholder div with:
+                  <img src="./images/project-python.jpg" alt="Python Programming Projects preview" class="project-img" />
+                -->
+                <div class="project-placeholder preview-python" aria-label="Python Programming Projects image placeholder">
+                  <div class="preview-mockup">
+                    <div class="mockup-bar">
+                      <span></span><span></span><span></span>
+                    </div>
+                    <div class="mockup-code">
+                      <div class="mockup-line short"></div>
+                      <div class="mockup-line wide"></div>
+                      <div class="mockup-line medium"></div>
+                      <div class="mockup-line short"></div>
+                    </div>
+                  </div>
+                  <span class="preview-label">Project Preview Placeholder</span>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <p class="project-tech">Python</p>
+                <h3 class="project-title">Python Programming Projects</h3>
+                <p class="project-description">
+                  A collection of beginner-level Python programs and structured coding exercises
+                  focused on loops, functions, conditionals, and logic building.
+                </p>
+                <div class="project-actions">
+                  <!-- Replace href with your specific repository URL when published -->
+                  <a
+                    href="https://github.com/hymalasyasomusekhar"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-secondary btn-sm"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                      />
+                    </svg>
+                    <span>View on GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: Responsive Landing Page -->
+            <article class="glass-card project-card">
+              <div class="project-preview">
+                <!--
+                  HOW TO ADD A PROJECT SCREENSHOT:
+                  Replace the .project-placeholder div with:
+                  <img src="./images/project-landing.jpg" alt="Responsive Landing Page preview" class="project-img" />
+                -->
+                <div class="project-placeholder preview-landing" aria-label="Responsive Landing Page image placeholder">
+                  <div class="preview-mockup">
+                    <div class="mockup-bar">
+                      <span></span><span></span><span></span>
+                    </div>
+                    <div class="mockup-grid-preview">
+                      <div class="mockup-card-mini"></div>
+                      <div class="mockup-card-mini"></div>
+                      <div class="mockup-card-mini"></div>
+                    </div>
+                  </div>
+                  <span class="preview-label">Project Preview Placeholder</span>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <p class="project-tech">HTML5 &nbsp;&middot;&nbsp; CSS3</p>
+                <h3 class="project-title">Responsive Landing Page</h3>
+                <p class="project-description">
+                  A clean, modern webpage built with CSS Flexbox, Grid, and media queries to adapt
+                  smoothly across mobile, tablet, and desktop viewports.
+                </p>
+                <div class="project-actions">
+                  <!-- Replace href with your specific repository URL when published -->
+                  <a
+                    href="https://github.com/hymalasyasomusekhar"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-secondary btn-sm"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                      />
+                    </svg>
+                    <span>View on GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+           5. EDUCATION SECTION
+           ===================================================== -->
+      <section id="education" class="section">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-kicker">Academic Background</p>
+            <h2 class="section-title">Education</h2>
+          </div>
+
+          <div class="education-timeline">
+            <article class="glass-card education-card">
+              <div class="edu-marker" aria-hidden="true">
+                <span class="edu-marker-dot"></span>
+              </div>
+              <div class="edu-content">
+                <p class="edu-status">Currently Pursuing – 1st Year</p>
+                <h3 class="edu-degree">Bachelor of Technology (B.Tech)</h3>
+                <p class="edu-branch">Computer Science and Engineering (CSE)</p>
+
+                <dl class="edu-meta-grid">
+                  <div>
+                    <dt>Institution</dt>
+                    <dd>Joy University</dd>
+                  </div>
+                  <div>
+                    <dt>Academic Collaboration</dt>
+                    <dd>NIAT / NxtWave</dd>
+                  </div>
+                  <div>
+                    <dt>Status</dt>
+                    <dd>Currently Pursuing – 1st Year</dd>
+                  </div>
+                </dl>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+           6. CAREER GOALS SECTION
+           ===================================================== -->
+      <section id="goals" class="section">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-kicker">Roadmap &amp; Vision</p>
+            <h2 class="section-title">Career Goals</h2>
+            <p class="section-subtitle">
+              Where I am heading as I progress through my undergraduate engineering studies.
+            </p>
+          </div>
+
+          <div class="goals-grid">
+            <article class="glass-card goal-card">
+              <span class="goal-index">01</span>
+              <h3 class="goal-title">Become a Professional Software Developer</h3>
+              <p class="goal-desc">
+                Build a well-rounded engineering mindset grounded in clean architecture, reliable
+                code, and user-focused thinking.
+              </p>
+            </article>
+
+            <article class="glass-card goal-card">
+              <span class="goal-index">02</span>
+              <h3 class="goal-title">Improve Programming &amp; Technical Skills</h3>
+              <p class="goal-desc">
+                Strengthen my fluency in Python, computer science fundamentals, and algorithmic
+                problem solving through consistent practice.
+              </p>
+            </article>
+
+            <article class="glass-card goal-card">
+              <span class="goal-index">03</span>
+              <h3 class="goal-title">Build Real-World Projects</h3>
+              <p class="goal-desc">
+                Move beyond classroom exercises by designing practical, helpful applications that
+                solve real user needs.
+              </p>
+            </article>
+
+            <article class="glass-card goal-card">
+              <span class="goal-index">04</span>
+              <h3 class="goal-title">Learn Modern Web Development</h3>
+              <p class="goal-desc">
+                Master HTML5 and CSS3 first, then expand steadily into interactive frontend and
+                full-stack web technologies.
+              </p>
+            </article>
+
+            <article class="glass-card goal-card">
+              <span class="goal-index">05</span>
+              <h3 class="goal-title">Gain Practical Industry Experience</h3>
+              <p class="goal-desc">
+                Collaborate with engineering teams through internships and hands-on opportunities to
+                learn professional development workflows.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+           7. CONTACT SECTION
+           ===================================================== -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="glass-card contact-card">
+            <div class="contact-intro">
+              <p class="section-kicker">Get in Touch</p>
+              <h2 class="section-title">Contact Me</h2>
+              <p class="contact-message">
+                Thank you for visiting my portfolio. I am always eager to connect with fellow
+                students, mentors, and recruiters regarding entry-level learning opportunities,
+                internships, or collaborative beginner projects.
+              </p>
+              <a
+                href="mailto:hymalasyasomusekhar@gmail.com"
+                class="btn btn-primary contact-email-btn"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                <span>Send an Email</span>
+              </a>
+            </div>
+
+            <div class="contact-channels">
+              <a href="mailto:hymalasyasomusekhar@gmail.com" class="channel-item">
+                <span class="channel-label">Email</span>
+                <span class="channel-value">hymalasyasomusekhar@gmail.com</span>
+              </a>
+
+              <a
+                href="https://github.com/hymalasyasomusekhar"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="channel-item"
+              >
+                <span class="channel-label">GitHub</span>
+                <span class="channel-value">github.com/hymalasyasomusekhar</span>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/hyma-s-98a318450"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="channel-item"
+              >
+                <span class="channel-label">LinkedIn</span>
+                <span class="channel-value">linkedin.com/in/hyma-s-98a318450</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================================
+         PURE CSS CV MODAL (Uses CSS :target — Zero JavaScript)
+         ===================================================== -->
+    <div id="cv-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="cv-modal-title">
+      <div class="glass-card modal-box">
+        <div class="modal-header">
+          <h2 id="cv-modal-title" class="modal-title">Curriculum Vitae — Hyma Lasya S</h2>
+          <a href="#home" class="modal-close" aria-label="Close CV dialog">&times;</a>
+        </div>
+        <p class="modal-text">
+          I am a 1st-year B.Tech CSE student at Joy University (in collaboration with NIAT/NxtWave),
+          currently learning Python, HTML5, CSS3, and Computer Science fundamentals.
+        </p>
+        <p class="modal-note">
+          To request my latest resume directly, please reach out via email. (Site owner note: once
+          you save your PDF as <code>assets/Hyma_Lasya_S_CV.pdf</code>, update the Download CV link
+          in <code>index.html</code> to download directly.)
+        </p>
+        <div class="modal-actions">
+          <a
+            href="mailto:hymalasyasomusekhar@gmail.com?subject=Request%20for%20CV%20-%20Hyma%20Lasya%20S"
+            class="btn btn-primary btn-sm"
+          >
+            Request CV via Email
+          </a>
+          <a href="#home" class="btn btn-secondary btn-sm">Close</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-copy">
+          &copy; 2026 Hyma Lasya S &nbsp;&middot;&nbsp; B.Tech CSE, Joy University
+        </p>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#home">Top</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="https://github.com/hymalasyasomusekhar" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/hyma-s-98a318450" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
